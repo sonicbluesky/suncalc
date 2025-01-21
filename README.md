@@ -33,11 +33,12 @@ var sunrisePos = SunCalc.getPosition(times.sunrise, 51.5, -0.1);
 var sunriseAzimuth = sunrisePos.azimuth * 180 / Math.PI;
 ```
 
-SunCalc is also available as an NPM package:
+SunCalc is also available as an NPM package*:
 
 ```bash
-$ npm install suncalc
+npm install suncalc # this command will get the old, buggy version
 ```
+\* This will download the upstream version which is old and has issues. To get the fixed code, download it from this repository.
 
 ```js
 var SunCalc = require('suncalc');
