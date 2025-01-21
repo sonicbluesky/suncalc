@@ -38,7 +38,7 @@ var heightTestTimes = {
 t.test('getPosition returns azimuth and altitude for the given time and location', function (t) {
     var sunPos = SunCalc.getPosition(date, lat, lng);
 
-    t.ok(near(sunPos.azimuth, -2.5003175907168385), 'azimuth');
+    t.ok(near(sunPos.azimuth, 0.6412750628729547), 'azimuth');
     t.ok(near(sunPos.altitude, -0.7000406838781611), 'altitude');
     t.end();
 });
@@ -64,7 +64,7 @@ t.test('getTimes adjusts sun phases when additionally given the observer height'
 t.test('getMoonPosition returns moon position data given time and location', function (t) {
     var moonPos = SunCalc.getMoonPosition(date, lat, lng);
 
-    t.ok(near(moonPos.azimuth, -0.9783999522438226), 'azimuth');
+    t.ok(near(moonPos.azimuth, 2.1631927013459706), 'azimuth');
     t.ok(near(moonPos.altitude, 0.014551482243892251), 'altitude');
     t.ok(near(moonPos.distance, 364121.37256256194), 'distance');
     t.end();
